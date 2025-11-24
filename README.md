@@ -17,33 +17,33 @@ O projeto segue a arquitetura padrão do Django com a separação de responsabil
 
 TODO_PROJECT/
 ├── project/
-│ ├── init.py # Inicializa o pacote do projeto
-│ ├── asgi.py # Configuração ASGI para deploy
-│ ├── settings.py # Configurações principais do Django
-│ ├── urls.py # URLs principais do projeto
-│ ├── wsgi.py # Configuração WSGI para deploy
+│   ├── __init__.py           # Inicializa o pacote do projeto
+│   ├── asgi.py               # Configuração ASGI para deploy
+│   ├── settings.py           # Configurações principais do Django
+│   ├── urls.py               # URLs principais do projeto
+│   ├── wsgi.py               # Configuração WSGI para deploy
 ├── tarefas/
-│ ├── migrations/ # Arquivos de migração do banco de dados
-│ ├── static/tarefas/ # Arquivos estáticos como CSS, JS
-│ ├── templates/tarefas/ # Templates HTML para renderizar as páginas
-│ │ ├── base.html # Template base, com estrutura comum
-│ │ ├── confirm_delete.html # Template de confirmação de exclusão
-│ │ ├── detalhes.html # Template para visualizar os detalhes da tarefa
-│ │ ├── form.html # Template de formulário para criação/edição de tarefas
-│ │ ├── lista.html # Template para listar todas as tarefas
-│ │ ├── login.html # Template de login
-│ │ ├── registro.html # Template de registro de usuários
-│ ├── admin.py # Registro de modelos no admin do Django
-│ ├── apps.py # Configuração do app 'tarefas'
-│ ├── forms.py # Formulários personalizados para tarefas e usuários
-│ ├── models.py # Modelos de dados, como Tarefa
-│ ├── tests.py # Arquivos de teste para o aplicativo
-│ ├── urls.py # URLs específicas do aplicativo 'tarefas'
-│ ├── views.py # Funções de visualização (views) para o aplicativo
-├── venv/ # Ambiente virtual para o projeto
-├── database/db.sqlite3 # Banco de dados SQLite
-├── manage.py # Comando para gerenciamento do projeto Django
-├── requirements.txt # Lista de dependências do projeto
+│   ├── migrations/           # Arquivos de migração do banco de dados
+│   ├── static/tarefas/       # Arquivos estáticos como CSS, JS
+│   ├── templates/tarefas/    # Templates HTML para renderizar as páginas
+│   │   ├── base.html         # Template base, com estrutura comum
+│   │   ├── confirm_delete.html # Template de confirmação de exclusão
+│   │   ├── detalhes.html     # Template para visualizar os detalhes da tarefa
+│   │   ├── form.html         # Template de formulário para criação/edição de tarefas
+│   │   ├── lista.html        # Template para listar todas as tarefas
+│   │   ├── login.html        # Template de login
+│   │   ├── registro.html     # Template de registro de usuários
+│   ├── admin.py              # Registro de modelos no admin do Django
+│   ├── apps.py               # Configuração do app 'tarefas'
+│   ├── forms.py              # Formulários personalizados para tarefas e usuários
+│   ├── models.py             # Modelos de dados, como Tarefa
+│   ├── tests.py              # Arquivos de teste para o aplicativo
+│   ├── urls.py               # URLs específicas do aplicativo 'tarefas'
+│   ├── views.py              # Funções de visualização (views) para o aplicativo
+├── venv/                     # Ambiente virtual para o projeto
+├── database/db.sqlite3       # Banco de dados SQLite
+├── manage.py                 # Comando para gerenciamento do projeto Django
+├── requirements.txt          # Lista de dependências do projeto
 
 ## Como Rodar o Projeto Localmente
 
