@@ -1,0 +1,15 @@
+{% extends "tarefas/base.html" %}
+
+{% block conteudo %}
+<h2>Excluir Viagem</h2>
+
+<p>Tem certeza que deseja excluir <strong>{{ viagem.destino }}</strong>?</p>
+
+<form method="POST">
+    {% csrf_token %}
+    <button type="submit" class="vermelho">Confirmar</button>
+</form>
+
+<a href="/">Cancelar</a>
+
+{% endblock %}

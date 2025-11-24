@@ -1,0 +1,27 @@
+{% extends "tarefas/base.html" %}
+
+{% block conteudo %}
+<h2>Registrar</h2>
+
+<form method="POST">
+    {% csrf_token %}
+
+    {{ form.non_field_errors }}
+
+    {% for field in form %}
+        <p>
+            {{ field.label_tag }}<br>
+            {{ field }}
+            {% if field.help_text %}
+                <small style="color: #888;">{{ field.help_text }}</small>
+            {% endif %}
+            {% for error in field.errors %}
+                <div style="color: red; font-size: 14px;">{{ error }}</div>
+            {% endfor %}
+        </p>
+    {% endfor %}
+
+    <button type="submit">Criar conta</button>
+</form>
+
+{% endblock %}

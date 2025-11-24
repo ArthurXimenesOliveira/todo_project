@@ -1,0 +1,18 @@
+{% extends "tarefas/base.html" %}
+{% block conteudo %}
+
+<h2>Minhas Viagens</h2>
+
+<ul class="lista">
+    {% for viagem in viagens %}
+        <li>
+            <a href="{% url 'detalhes_viagem' viagem.id %}">
+                {{ viagem.destino }} — {{ viagem.data }}
+            </a>
+        </li>
+    {% empty %}
+        <p>Nenhuma viagem cadastrada.</p>
+    {% endfor %}
+</ul>
+
+{% endblock %}

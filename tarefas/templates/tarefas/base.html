@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <title>Viagens</title>
+    <link rel="stylesheet" href="/static/tarefas/style.css" />
+</head>
+<body>
+
+<nav>
+    <a href="/">Início</a>
+
+    {% if user.is_authenticated %}
+        <a href="{% url 'nova_viagem' %}">Nova Viagem</a>
+        <a href="{% url 'logout' %}">Sair</a>
+    {% else %}
+        <a href="{% url 'login' %}">Entrar</a>
+        <a href="{% url 'registro' %}">Registrar</a>
+    {% endif %}
+</nav>
+
+<div class="container">
+    {% block conteudo %}
+    {% endblock %}
+</div>
+
+<footer style="
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background: #f2f2f2;
+    color: #555;
+    border-top: 1px solid #ddd;
+">
+    <p>© 2025 - Sistema de Viagens • Arthur Ximenes / Matheus Keven</p>
+</footer>
+
+</body>
+</html>

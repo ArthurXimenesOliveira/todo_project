@@ -1,0 +1,20 @@
+{% extends "tarefas/base.html" %}
+
+{% block conteudo %}
+<h2>Login</h2>
+
+<form method="POST">
+    {% csrf_token %}
+    <label>Usuário</label>
+    <input type="text" name="username">
+
+    <label>Senha</label>
+    <input type="password" name="password">
+
+    <button type="submit">Entrar</button>
+
+    {% if erro %}
+        <p class="erro">{{ erro }}</p>
+    {% endif %}
+</form>
+{% endblock %}
