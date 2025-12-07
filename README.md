@@ -3,28 +3,73 @@
 ## 👥 Autores
 Arthur Ximenes / Matheus Keven
 
-## 🧩 Descrição do Projeto
-
-O **Sistema TODO de Viagens** é uma aplicação web desenvolvida com Django para organizar tarefas relacionadas a viagens.  
-Ele permite que os usuários registrem atividades, compromissos, preparativos e anotações importantes para cada viagem, de forma simples e eficiente.
-
-O sistema conta com autenticação completa, garantindo que cada usuário visualize e gerencie apenas suas próprias tarefas.
+## 📌 Repositório GitHub
+https://github.com/ArthurXimenesOliveira/todo_project
 
 ---
 
-## 🚀 Funcionalidades
+# 📄 Relatório Técnico do Projeto Django
 
-- **Cadastro/Login de Usuários**  
-  Cada usuário acessa apenas suas próprias listas de tarefas de viagem.
+## Introdução
+Este relatório apresenta de forma rápida o projeto desenvolvido utilizando Django, incluindo seu objetivo principal, tecnologias aplicadas e funcionalidades implementadas.
 
-- **CRUD de Tarefas**  
-  Criar, visualizar, editar e excluir tarefas relacionadas à sua viagem.
+## Objetivo do Trabalho
+O principal objetivo do projeto foi desenvolver uma aplicação web completa para **gerenciamento de viagens**, permitindo que usuários autenticados realizem cadastro, login e CRUD de viagens.
+
+## Descrição do que foi feito
+O sistema foi estruturado seguindo o padrão **MTV do Django**, utilizando:
+
+- **Models** para representar entidades  
+- **Views** para controlar a lógica  
+- **Templates** para renderização dinâmica  
+
+O projeto também inclui autenticação, validação e controle de dados via ORM do Django.
+
+## Tecnologias Utilizadas
+- Python 3.10+
+- Django
+- HTML/CSS com templating Django
+- SQLite (banco padrão do Django para desenvolvimento)
+
+## Principais Funcionalidades
+- Autenticação de usuários (login, logout e registro)
+- CRUD completo de viagens associadas ao usuário autenticado
+- Validação e gerenciamento de dados via ORM
+- Interface simples e funcional
+- Rotas protegidas por decorators
+
+## Destaques do Projeto
+- Uso de decorators para proteger páginas
+- Estrutura limpa e organizada seguindo boas práticas do Django
+- Fluxo de navegação intuitivo para o usuário final
+
+## Encerramento
+Agradecemos pela atenção.  
+O vídeo de apresentação do projeto está disponível no repositório GitHub junto ao código-fonte.
+
+---
+
+# 🧩 Descrição do Sistema TODO de Viagens
+
+O **Sistema TODO de Viagens** é uma aplicação web para que usuários organizem suas tarefas relacionadas a viagens — incluindo lembretes, atividades, destinos e preparativos.
+
+Cada usuário possui suas próprias listas, protegidas por autenticação.
+
+---
+
+# 🚀 Funcionalidades do Sistema
+
+- **Cadastro/Login/Logout**  
+  Cada usuário administra apenas suas próprias viagens.
+
+- **CRUD de Tarefas de Viagem**  
+  Criar, editar, listar e apagar tarefas de viagem.
 
 - **Interface Responsiva**  
-  Funciona bem tanto em computadores quanto em celulares.
+  Compatível com computadores e dispositivos móveis.
 
-- **Segurança**  
-  Proteção de dados através do sistema de autenticação do Django.
+- **Segurança e Privacidade**  
+  Acesso restrito usando autenticação do Django.
 
 ---
 
