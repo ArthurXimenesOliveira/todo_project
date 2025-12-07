@@ -1,35 +1,48 @@
-# Sistema TODO com Django
+# ✈️ Sistema TODO de Viagens com Django
 
-## Autores: Arthur Ximenes / Matheus Keven
+## 👥 Autores
+Arthur Ximenes / Matheus Keven
 
 ## 🧩 Descrição do Projeto
 
-O Sistema TODO com Django é uma aplicação web desenvolvida para gerenciamento de tarefas. Com ele, os usuários podem cadastrar, editar, listar e excluir tarefas de forma simples. O sistema conta com um sistema de autenticação que garante que cada usuário tenha acesso apenas às suas próprias tarefas.
+O **Sistema TODO de Viagens** é uma aplicação web desenvolvida com Django para organizar tarefas relacionadas a viagens.  
+Ele permite que os usuários registrem atividades, compromissos, preparativos e anotações importantes para cada viagem, de forma simples e eficiente.
 
-## Funcionalidades
+O sistema conta com autenticação completa, garantindo que cada usuário visualize e gerencie apenas suas próprias tarefas.
 
-- **Cadastro/Login de Usuários**: Usuários podem se registrar, fazer login e logout, garantindo que cada um acesse suas próprias tarefas.
-- **CRUD de Tarefas**: Criação, visualização, edição e exclusão de tarefas com informações como título, descrição e data.
-- **Interface Responsiva**: A aplicação se adapta para diferentes dispositivos, oferecendo uma boa experiência em desktops e celulares.
-- **Segurança**: Cada usuário só pode acessar e editar suas próprias tarefas, utilizando o sistema de autenticação do Django.
+---
 
-## Estrutura do Projeto
+## 🚀 Funcionalidades
 
-O projeto segue a arquitetura padrão do Django com a separação de responsabilidades entre modelos, views e templates. A estrutura de diretórios do projeto é a seguinte:
+- **Cadastro/Login de Usuários**  
+  Cada usuário acessa apenas suas próprias listas de tarefas de viagem.
+
+- **CRUD de Tarefas**  
+  Criar, visualizar, editar e excluir tarefas relacionadas à sua viagem.
+
+- **Interface Responsiva**  
+  Funciona bem tanto em computadores quanto em celulares.
+
+- **Segurança**  
+  Proteção de dados através do sistema de autenticação do Django.
+
+---
+
+## 📁 Estrutura do Projeto
 
 ```txt
 TODO_PROJECT/
 ├── project/
-│   ├── __init__.py            # Inicializa o pacote do projeto
-│   ├── asgi.py                # Configuração ASGI para deploy
-│   ├── settings.py            # Configurações principais do Django
-│   ├── urls.py                # URLs principais do projeto
-│   ├── wsgi.py                # Configuração WSGI para deploy
+│   ├── __init__.py            
+│   ├── asgi.py                
+│   ├── settings.py            
+│   ├── urls.py                
+│   ├── wsgi.py                
 │
 ├── tarefas/
-│   ├── migrations/            # Arquivos de migração
-│   ├── static/tarefas/        # Arquivos estáticos
-│   ├── templates/tarefas/     # Templates HTML
+│   ├── migrations/            
+│   ├── static/tarefas/        
+│   ├── templates/tarefas/     
 │   │   ├── base.html
 │   │   ├── confirm_delete.html
 │   │   ├── detalhes.html
@@ -51,46 +64,40 @@ TODO_PROJECT/
 ├── requirements.txt
 ```
 
+# 🔧 Como Rodar o Projeto Localmente
 
-## Como Rodar o Projeto Localmente
+## 1️⃣ Clone o repositório
 
-1. **Clone o repositório**:
 git clone https://github.com/ArthurXimenesOliveira/todo_project.git
 
-2. **Instale as dependências**:
-Se você ainda não tiver as dependências instaladas, use o seguinte comando:
+## 2️⃣ Crie e ative o ambiente virtual
+
+# Windows
+python -m venv venv
+venv\Scripts\activate
+
+# Linux/macOS
+python3 -m venv venv
+source venv/bin/activate
+
+## 3️⃣ Instale as dependências
+
+Caso as bibliotecas ainda não estejam instaladas, execute:
+
 pip install -r requirements.txt
 
-3. **Crie e ative um ambiente virtual**:
+## 4️⃣ Aplique as migrações
 
-- No Windows:
-  ```
-  python -m venv venv
-  venv\Scripts\activate
-  ```
-
-- No Linux/macOS:
-  ```
-  python3 -m venv venv
-  source venv/bin/activate
-  ```
-
-4. **Aplique as migrações**:
-Configure o banco de dados com as migrações:
 python manage.py migrate
 
-5. **Crie um superusuário** para acessar o painel de administração:
+## 5️⃣ Crie um superusuário
+
 python manage.py createsuperuser
 
-6. **Inicie o servidor de desenvolvimento**:
+## 6️⃣ Execute o servidor
+
 python manage.py runserver
 
-7. **Acesse o sistema**:
-Abra o navegador e acesse [http://127.0.0.1:8000](http://127.0.0.1:8000) para começar a usar o sistema TODO.
+## 7️⃣ Acesse o sistema
 
-
-
-
-
-
-
+http://127.0.0.1:8000
