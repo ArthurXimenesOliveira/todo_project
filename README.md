@@ -1,5 +1,7 @@
 # Sistema TODO com Django
 
+## Autores: Arthur Ximenes / Matheus Keven
+
 ## 🧩 Descrição do Projeto
 
 O Sistema TODO com Django é uma aplicação web desenvolvida para gerenciamento de tarefas. Com ele, os usuários podem cadastrar, editar, listar e excluir tarefas de forma simples. O sistema conta com um sistema de autenticação que garante que cada usuário tenha acesso apenas às suas próprias tarefas.
