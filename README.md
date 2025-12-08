@@ -119,7 +119,7 @@ git clone https://github.com/ArthurXimenesOliveira/todo_project.git
 
 # Windows
 python -m venv venv
-venv\Scripts\activate
+.\venv\Scripts\activate
 
 # Linux/macOS
 python3 -m venv venv
@@ -131,13 +131,13 @@ Caso as bibliotecas ainda não estejam instaladas, execute:
 
 pip install -r requirements.txt
 
-## 4️⃣ Aplique as migrações
+## 4️⃣ Faça as migraões
+
+python manage.py makemigrations
+
+## 5️⃣ Aplique as migrações
 
 python manage.py migrate
-
-## 5️⃣ Crie um superusuário
-
-python manage.py createsuperuser
 
 ## 6️⃣ Execute o servidor
 
